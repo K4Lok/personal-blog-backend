@@ -5,9 +5,21 @@
     box-sizing: border-box;
 }
 
+:root {
+    --text-stroke: #000;
+    --light-gray: #cbbdbd;
+    --light-gray-hover: #847A7A;
+    --sun-size: 10vw;
+    --sun-top: 25vh - 4vw; 
+    /* --sun-top: 25vh + 2vw;  */
+    --sun-left: 50% - 5vw;
+    --sun-shawdow-size: 10vw * 5;
+    --sun-shawdow-blur: 130px;
+}
+
 body {
     margin: 0;
-    background-image: linear-gradient(180deg, rgba(60, 110, 238, 0.33) 0%, rgba(188, 61, 220, 0.33) 75%);
+    background: linear-gradient(180deg, rgba(60, 110, 238, 0.33) 0%, rgba(188, 61, 220, 0.33) 75%);
     height: 100vh;
 }
 
@@ -17,7 +29,14 @@ body {
     height: 100%;
     padding-top: 25vh;
     position: relative;
-    overflow: hidden; /* The wave won't extend the page after  this*/
+    overflow: hidden; /* The wave won't extend the page after this*/
+}
+
+.banner-container {
+    position: relative;
+    display: inline-block;
+    width: fit-content; 
+    height: fit-content;
 }
 
 .banner-container #banner{
@@ -29,15 +48,19 @@ body {
     -webkit-text-stroke-color: #000;
     padding: 0;
     margin: 0;
+    user-select: none;
+    filter: brightness(1.3);
 }
 
 .banner-container #secret-login {
     cursor: pointer;
-    color: #cbbdbd;
+    color: var(--light-gray);
+    margin: 0;
+    padding: 0;
 }
 
 .banner-container #secret-login:hover {
-    color: #847A7A;
+    color: var(--light-gray-hover);
 }
 
 .banner-container #login-btn {
@@ -47,9 +70,58 @@ body {
     font-size: 2.4vw;
     letter-spacing: 0.2em;
     padding: 4px 24px;
-    border: 4px solid #000;
+    border: 4px solid var(--text-stroke);
     border-radius: 6px;
     margin-left: 7vw;
+    cursor: pointer;
+}
+
+.banner-container #login-btn:hover {
+    background-color: var(--light-gray);
+}
+
+#login-btn.show {
+    display: block;
+}
+
+/* .login-block {
+    position: absolute;
+    left: 12%;
+    bottom: -30%;
+    background-color: red;
+    padding: 20px 40px;
+} */
+
+.container .sun {
+    position: absolute;
+    top: calc(var(--sun-top));
+    left: calc(var(--sun-left));
+    width: var(--sun-size);
+    height: var(--sun-size);
+    background: linear-gradient(180deg, #f08c32, #ee776f, transparent);
+    background-size: 200% 200%;
+    border-radius: 100%;
+    /* filter: blur(20px); */
+    animation: sunrise 1s normal ease-in;
+    z-index: -2;
+}
+
+.container .sun::after {
+    content: '';
+    position: absolute;
+    top: calc((10vw / 2) + (var(--sun-shawdow-size) / -2));
+    left: calc((10vw / 2) + (var(--sun-shawdow-size)/ -2));
+    width: calc(var(--sun-shawdow-size));
+    height: calc(var(--sun-shawdow-size));
+    background: radial-gradient(circle, rgb(255, 135, 77, 0.4) 0%, rgba(255, 174, 188, 0.8) 70%, transparent);
+    border-radius: 100%;
+    filter:blur(var(--sun-shawdow-blur));
+    z-index: -3;
+}
+
+.container .animated-sea{
+    user-select: none;
+    pointer-events: none; /* to prevent image getting drag*/
 }
 
 .container .animated-sea img{
@@ -79,6 +151,33 @@ body {
     bottom: 7vh;
     left: 5vw;
     animation: boat 10s linear infinite;
+}
+
+.sunrise-black-to-light {
+    animation: sunrise-background .5s ease-in;
+}
+
+@keyframes sunrise {
+    0% {
+        transform: translateY(90vh);
+        filter: blur(50px);
+    }
+    /* 60% {
+        transform: translateY(-5vh);
+    } */
+    100% {
+        transform: translateY(0vh);
+        filter:  blur(0px);
+    }
+}
+
+@keyframes sunrise-background {
+    0% {
+        filter: brightness(0.3);
+    }
+    100% {
+        filter: brightness(1);
+    }
 }
 
 @keyframes waves {
