@@ -21,6 +21,7 @@ body {
     margin: 0;
     background: linear-gradient(180deg, rgba(60, 110, 238, 0.33) 0%, rgba(188, 61, 220, 0.33) 75%);
     height: 100vh;
+    overflow: hidden; /* Not able to scroll more than the container */
 }
 
 .container {
@@ -97,12 +98,14 @@ body {
     top: calc(var(--sun-top));
     left: calc(var(--sun-left));
     width: var(--sun-size);
+    min-width: 100px;
     height: var(--sun-size);
+    min-height: 100px;
     background: linear-gradient(180deg, #f08c32, #ee776f, transparent);
     background-size: 200% 200%;
     border-radius: 100%;
     /* filter: blur(20px); */
-    animation: sunrise 1s normal ease-in;
+    /* animation: sunrise 1s normal ease-in; */
     z-index: -2;
 }
 
@@ -117,6 +120,16 @@ body {
     border-radius: 100%;
     filter:blur(var(--sun-shawdow-blur));
     z-index: -3;
+}
+
+.container .sun.sunrise {
+    animation: sunrise 1s normal ease-in;
+}
+
+.container .sun.to-right {
+    top: calc(var(--sun-top) - 10vh);
+    left: calc(var(--sun-left) + 35vw);
+    animation: toright 2s normal ease-in;
 }
 
 .container .animated-sea{
@@ -168,6 +181,17 @@ body {
     100% {
         transform: translateY(0vh);
         filter:  blur(0px);
+    }
+}
+
+@keyframes toright {
+    0% {
+        top: calc(var(--sun-top));
+        left: calc(var(--sun-left));
+    }
+    100% {
+        top: calc(var(--sun-top) - 10vh);
+        left: calc(var(--sun-left) + 35vw);
     }
 }
 
