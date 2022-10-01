@@ -1,3 +1,21 @@
+
+---
+
+### 2022.10.01
+[HTML/CSS]
+
+Login Page
+- Animated the sun moving the right top corner.
+- Created the input field for username and password.
+
+<details>
+  <summary>showcase</summary>
+  <img with="1024" alt="" src="https://user-images.githubusercontent.com/82365010/193397618-0a317bb8-9228-481d-aeb0-e71d795eb74f.gif">
+
+</details>
+
+---
+
 ### 2022.09.12
 [HTML/CSS]
 
@@ -8,6 +26,8 @@ Welcome Page
   <summary>showcase</summary>
 <img width="901" alt="sunrise" src="https://user-images.githubusercontent.com/82365010/189623893-6142a79c-e42f-40ed-bdae-a80129712168.gif">
 </details>
+
+---
 
 ### 2022.09.08
 [HTML/CSS]
