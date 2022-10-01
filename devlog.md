@@ -4,7 +4,10 @@
 Welcome Page
 - Animated the sunrise.
 
+<details>
+  <summary>showcase</summary>
 <img width="901" alt="sunrise" src="https://user-images.githubusercontent.com/82365010/189623893-6142a79c-e42f-40ed-bdae-a80129712168.gif">
+</details>
 
 ### 2022.09.08
 [HTML/CSS]
@@ -12,7 +15,10 @@ Welcome Page
 Welcome Page
 - Coded the Welcome Page and animated the boat and sea waves.
 
+<details>
+  <summary>showcase</summary>
 <img width="901" alt="sea-waves" src="https://user-images.githubusercontent.com/82365010/189623590-7c3b21a2-3a5e-4bc4-9044-c31012738cfd.gif">
+</details>
 
 ---
 
