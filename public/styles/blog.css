@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@400;600;700&display=swap');
+
+.blog-lists {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    /* gap: 30px; */
+    padding-top: 20px;
+    padding-bottom: 60px; /* for showing the last card */
+    font-family: 'Hepta Slab', serif;
+    overflow-y: scroll;
+}
+
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    width: 70vw;
+    min-width: 700px;
+    padding: 20px 30px;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border: 4px solid #F7B0B0;
+    border-radius: 40px;
+    margin-bottom: 30px;
+}
+
+.blog-card .blog-title {
+    margin: 0;
+    font-size: 1.875rem;
+    font-weight: 600;
+}
+
+.blog-card .blog-date {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #787878;
+}
+
+.blog-card .blog-preview-text {
+    margin: 0;
+    margin-top: 18px;
+    font-size: 1rem;
+    color: #363636;
+}

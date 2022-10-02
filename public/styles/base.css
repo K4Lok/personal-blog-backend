@@ -26,14 +26,14 @@ body {
 
 .container {
     display: flex;
-    justify-content: center;
-    height: 100%;
-    padding-top: 25vh;
+    flex-direction: column;
+    height: 100vh;
     position: relative;
     overflow: hidden; /* The wave won't extend the page after this*/
 }
 
 .banner-container {
+    margin: 25vh auto 0 auto;
     position: relative;
     display: inline-block;
     width: fit-content; 

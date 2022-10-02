@@ -6,7 +6,12 @@ function getLogin(req, res) {
 
 // }
 
+function getHome(req, res) {
+    res.render('home');
+}
+
 module.exports = {
     getLogin: getLogin,
+    getHome: getHome
     // login: login
 }

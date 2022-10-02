@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
+.navigation-bar {
+    display: block;
+    margin: 40px 50px;
+    height: 5vh;
+    max-height: 120px;
+}
+
+.navigation-bar ol{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation-bar ol li {
+    font-family: 'Irish Grover', cursive;
+    font-size: 1.875rem;
+    color: #EF7870;
+}
+
+.navigation-bar ol li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navigation-bar ol li a:hover {
+    color: #F2493E;
+}
+
+.navigation-bar ol li a:active {
+    color: #EF7870;
+}
