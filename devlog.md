@@ -1,3 +1,17 @@
+### 2022.10.02
+[HTML/CSS]
+
+Home Page
+
+> Contains the navigation bar for browsing, manage all the blogs as well as creating new blog.
+- Created the navigation bar.
+- The blog lists for all the blogs.
+
+<details>
+  <summary>showcase</summary>
+  <img with="1024" alt="" src="https://user-images.githubusercontent.com/82365010/193461038-1872c7ef-6546-49b4-aa74-cbeb8b5d1dc2.gif">
+</details>
+
 
 ---
 
@@ -11,7 +25,6 @@ Login Page
 <details>
   <summary>showcase</summary>
   <img with="1024" alt="" src="https://user-images.githubusercontent.com/82365010/193397618-0a317bb8-9228-481d-aeb0-e71d795eb74f.gif">
-
 </details>
 
 ---
