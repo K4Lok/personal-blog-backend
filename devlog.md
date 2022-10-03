@@ -1,3 +1,25 @@
+
+### 2022.10.03
+[JS]
+
+Login Function
+- Establish database connection to mongodb.
+- Create session storage for later authen and input cache.
+- Login validation and error message.
+- Caching inputs if not able to login successfully.
+
+<details>
+  <summary>showcase</summary>
+  <img with="1026" src="https://user-images.githubusercontent.com/82365010/193562265-ebb7a178-fa83-404f-ab53-67f1457f86a4.gif">
+</details>
+
+**TODO**
+- Protect the routes for further actions on manipulating the blogs.
+- The further actions must be authenticated, probably with the session/cookies to check.
+- Create blog page and logic behind it.
+
+---
+
 ### 2022.10.02
 [HTML/CSS]
 
@@ -9,9 +31,12 @@ Home Page
 
 <details>
   <summary>showcase</summary>
-  <img with="1024" alt="" src="https://user-images.githubusercontent.com/82365010/193461038-1872c7ef-6546-49b4-aa74-cbeb8b5d1dc2.gif">
+  <img with="1024" src="https://user-images.githubusercontent.com/82365010/193461038-1872c7ef-6546-49b4-aa74-cbeb8b5d1dc2.gif">
 </details>
 
+**TODO**
+- Login Function
+- Create database
 
 ---
 
