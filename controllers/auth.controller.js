@@ -31,7 +31,18 @@ async function login(req, res) {
         return;
     }
 
+    const existingUser = await user.getUserWithName();
+    const isPasswordCorrect = await user.isPasswordValid(existingUser.password);
 
+    if(!isPasswordCorrect) {
+        cacheUtil.storeSessionInputs(req, {
+            errorMessage: 'Enter the correct password!',
+            username: req.body.username
+        }, () => {
+            res.redirect('/login');
+        })
+        return;
+    }
 
     res.redirect('/home');
 }

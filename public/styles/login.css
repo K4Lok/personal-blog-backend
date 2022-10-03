@@ -15,6 +15,12 @@
     font-family: 'Irish Grover', cursive;
 }
 
+.form-login .error-msg {
+    width: 100%;
+    text-align: left;
+    color: red;
+}
+
 .form-login input {
     display: block;
     font-family: inherit;

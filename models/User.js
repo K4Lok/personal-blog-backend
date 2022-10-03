@@ -9,12 +9,8 @@ class User {
         this.password = password;
     }
 
-    async isUserExists() {
-        return await db.getDb().collection('user').findOne({username: this.username}, {password: 0});
-    }
-
     async signup() {
-        const hashedPassword = await bcrypt.hash(this.password, 15);
+        const hashedPassword = await bcrypt.hash(this.password, 12);
 
         await db.getDb().collection('user').insertOne({
             username: this.username,
@@ -22,8 +18,16 @@ class User {
         })
     }
 
+    async isUserExists() {
+        return await db.getDb().collection('user').findOne({username: this.username}, {password: 0});
+    }
+
     async isPasswordValid(hashedPassword) {
         return await bcrypt.compare(this.password, hashedPassword);
+    }
+
+    async getUserWithName() {
+        return await db.getDb().collection('user').findOne({ username: this.username});
     }
 
 }
