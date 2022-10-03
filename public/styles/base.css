@@ -81,6 +81,10 @@ body {
     background-color: var(--light-gray);
 }
 
+.banner-container #login-btn:active {
+    scale: 1.05;
+}
+
 #login-btn.show {
     display: block;
 }

@@ -18,7 +18,8 @@
     flex-direction: column;
     height: 70vh;
     width: 70vw;
-    min-width: 700px;
+    min-width: 500px;
+    max-width: 900px;
     padding: 20px 30px;
     background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
@@ -35,7 +36,7 @@
 
 .blog-card .blog-date {
     margin: 0;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     color: #787878;
 }
 
