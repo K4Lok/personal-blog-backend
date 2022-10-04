@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
 
 .navigation-bar {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     margin: 40px 50px;
-    height: 5vh;
+    max-height: 10vh;
     max-height: 120px;
 }
 
@@ -32,4 +35,23 @@
 
 .navigation-bar ol li a:active {
     color: #EF7870;
+}
+
+.logout-icon {
+    cursor: pointer;
+    height: 45px;
+    width: 45px;
+    display: block;
+    /* filter: invert(78%) sepia(2%) saturate(7496%) hue-rotate(314deg) brightness(99%) contrast(108%); */
+    /* filter: invert(96%) sepia(96%) saturate(486%) hue-rotate(290deg) brightness(97%) contrast(110%); */
+    filter: invert(59%) sepia(20%) saturate(1331%) hue-rotate(315deg) brightness(95%) contrast(98%);
+}
+
+.logout-icon:hover {
+    filter: invert(78%) sepia(2%) saturate(7496%) hue-rotate(314deg) brightness(99%) contrast(108%);
+    /* filter: invert(59%) sepia(20%) saturate(1331%) hue-rotate(315deg) brightness(95%) contrast(98%); */
+}
+
+.logout-icon:active {
+    scale: 1.05;
 }

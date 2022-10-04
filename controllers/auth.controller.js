@@ -1,7 +1,12 @@
 const User = require('../models/User');
+const authUtil = require('../util/authentication');
 const cacheUtil = require('../util/cache-input');
 
 function getLogin(req, res) {
+    if(res.locals.isAdmin) {
+        return res.redirect('/home');
+    }
+
     let cacheInputs = cacheUtil.getSessionInputs(req);
 
     if(!cacheInputs) {
@@ -18,8 +23,6 @@ async function login(req, res) {
     // user.signup();
 
     const isUserExists = await user.isUserExists();
-
-    console.log(isUserExists);
 
     if(!isUserExists) {
         cacheUtil.storeSessionInputs(req, {
@@ -44,7 +47,14 @@ async function login(req, res) {
         return;
     }
 
-    res.redirect('/home');
+    authUtil.createUserSession(req, existingUser, () => {
+        res.redirect('/home');
+    });
+}
+
+function logout(req, res) {
+    authUtil.destroyUserSession(req);
+    res.redirect('/');
 }
 
 function getHome(req, res) {
@@ -54,5 +64,6 @@ function getHome(req, res) {
 module.exports = {
     getLogin: getLogin,
     login: login,
+    logout: logout,
     getHome: getHome
 }
