@@ -1,3 +1,21 @@
+### 2022.10.04
+[HTML, JS]
+
+Authentication for protecting private routes
+- Create middlewares for checking the user identity as well as the privilege.
+- Redirect unauthenticated user to access the protected routes.
+- Logout function for destroying the session.
+
+Logout Icon
+- Hover and active effect to make it more interactive.
+
+<details>
+  <summary>showcase</summary>
+  <img width="1430" src="https://user-images.githubusercontent.com/82365010/193709621-19571e84-0f8d-4717-b2cb-c3134dc74ef6.png">
+
+</details>
+
+---
 
 ### 2022.10.03
 [JS]
@@ -15,7 +33,7 @@ Login Function
 
 **TODO**
 - Protect the routes for further actions on manipulating the blogs.
-- The further actions must be authenticated, probably with the session/cookies to check.
+- The further actions must be authenticated, probably checking it w/ session/cookies.
 - Create blog page and logic behind it.
 
 ---
