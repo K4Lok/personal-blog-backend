@@ -1,3 +1,18 @@
+### 2022.10.05
+[HTML, CSS]
+
+New Blog Page
+- Create a form for the blog contents.
+- Embed CKEditor into the form for the markdown content.
+
+<details>
+  <summary>showcase</summary>
+  <img width="600" src="https://user-images.githubusercontent.com/82365010/194112720-673fdc35-c835-451c-b26d-605e5dc2da66.png">
+  <img width="600" src="https://user-images.githubusercontent.com/82365010/194112699-6bc3ad2b-b7f3-4501-ab2f-15b29583c48a.png">
+</details>
+
+---
+
 ### 2022.10.04
 [HTML, JS]
 
@@ -12,7 +27,6 @@ Logout Icon
 <details>
   <summary>showcase</summary>
   <img width="1430" src="https://user-images.githubusercontent.com/82365010/193709621-19571e84-0f8d-4717-b2cb-c3134dc74ef6.png">
-
 </details>
 
 ---
