@@ -1,0 +1,31 @@
+<%- include('components/head', {pageTitle: 'New Blog'}) %>
+<link rel="stylesheet" href="static/styles/navigation.css">
+<link rel="stylesheet" href="static/styles/blog.css">
+<link rel="stylesheet" href="static/styles/blog-details.css">
+<script src="https://cdn.ckeditor.com/ckeditor5/35.1.0/classic/ckeditor.js"></script>
+</head>
+<body>
+<div class="container">
+    <%- include('components/nav-bar') %>
+    <div class="blog-wrapper">
+        <form class="blog">
+            <input class="underline-input title" type="text" placeholder="Title of the blog">
+            <textarea class="bordered-input description" placeholder="Type the descriptions here..." rows="3"></textarea>
+            <div class="markdown" id="markdown"></div>
+            <button class="btn btn-submit">Submit</button>
+        </form>
+    </div>
+    <%- include('components/footer-animated-sea.ejs') %>
+    <script>
+        ClassicEditor
+            .create( document.querySelector( '.markdown' ) )
+            .then( editor => {
+                // editor.ui.view.editable.element.style.height = '500px';
+            } )
+            .catch( error => {
+                    console.error( error );
+            } );
+    </script>
+</div>
+</body>
+</html>
