@@ -31,3 +31,9 @@ node_modules/
 config.js
 
 package-lock.json
+
+# MacOS
+*.DS_Store
+
+# Images data
+blog-data/images/*

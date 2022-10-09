@@ -57,13 +57,8 @@ function logout(req, res) {
     res.redirect('/');
 }
 
-function getHome(req, res) {
-    res.render('home');
-}
-
 module.exports = {
     getLogin: getLogin,
     login: login,
-    logout: logout,
-    getHome: getHome
+    logout: logout
 }

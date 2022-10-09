@@ -13,6 +13,7 @@ const appRouter = require('./routes/router.routes');
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 app.use('/static', express.static('public'));
+app.use('/blog/uploads', express.static('blog-data/images'));
 app.use(express.urlencoded({extended: true}));
 app.use(expressSession(createSessionConfig()));
 

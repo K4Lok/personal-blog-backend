@@ -12,6 +12,7 @@
 
 .navigation-bar ol{
     list-style: none;
+    user-select: none;
     display: flex;
     gap: 20px;
     padding: 0;
@@ -42,6 +43,7 @@
     height: 45px;
     width: 45px;
     display: block;
+    user-select: none;
     /* filter: invert(78%) sepia(2%) saturate(7496%) hue-rotate(314deg) brightness(99%) contrast(108%); */
     /* filter: invert(96%) sepia(96%) saturate(486%) hue-rotate(290deg) brightness(97%) contrast(110%); */
     filter: invert(59%) sepia(20%) saturate(1331%) hue-rotate(315deg) brightness(95%) contrast(98%);

@@ -8,8 +8,8 @@ router.post('/login', authController.login);
 
 router.get('/logout', authController.logout);
 
-router.use(protectRoutesMiddleware);
+// router.use(protectRoutesMiddleware);
 
-router.get('/home', authController.getHome);
+// router.get('/home', authController.getHome);
 
 module.exports = router;

@@ -8,23 +8,30 @@
 <div class="container">
     <%- include('components/nav-bar') %>
     <div class="blog-wrapper">
-        <form class="blog">
-            <input class="underline-input title" type="text" placeholder="Title of the blog">
-            <textarea class="bordered-input description" placeholder="Type the descriptions here..." rows="3"></textarea>
-            <div class="markdown" id="markdown"></div>
+        <form class="blog" method="POST" action="/new-blog">
+            <input class="underline-input title" name="title" type="text" placeholder="Title of the blog">
+            <textarea class="bordered-input description" name="description" placeholder="Type the descriptions here..." rows="3"></textarea>
+            <textarea class="markdown" id="markdown" name="content"></textarea>
             <button class="btn btn-submit">Submit</button>
         </form>
     </div>
     <%- include('components/footer-animated-sea.ejs') %>
     <script>
         ClassicEditor
-            .create( document.querySelector( '.markdown' ) )
-            .then( editor => {
+            .create(document.querySelector('.markdown'), {
+                ckfinder: {
+                    uploadUrl: '/upload-image',
+                    options: {
+                        resourceType: 'Images'
+                    }
+                }
+            })
+            .then(editor => {
                 // editor.ui.view.editable.element.style.height = '500px';
-            } )
-            .catch( error => {
+            })
+            .catch(error => {
                     console.error( error );
-            } );
+            });
     </script>
 </div>
 </body>
