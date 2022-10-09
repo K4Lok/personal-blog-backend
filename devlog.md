@@ -1,3 +1,25 @@
+### 2022.10.09
+[Express.js]
+
+Create new Blog
+- Able to pass the markdown content in CKEditor.
+- As well as the image upload from CKEditor to Express server.
+- Create the Blog Model for interacting the data in database.
+- Insert Blog data from the form input.
+- Display all the blogs in the home page.
+- Render the blog list with all blogs array.
+
+<details>
+  <summary>showcase</summary>
+  <img width="800" src="https://user-images.githubusercontent.com/82365010/194745834-3bc6ea86-2f5c-4495-be86-37a72354e2c4.gif">
+</details>
+
+Other that that
+- Move the home route from auth route to blog route.
+- Add images path to gitignore.
+
+---
+
 ### 2022.10.05
 [HTML, CSS]
 
@@ -19,7 +41,7 @@ New Blog Page
 Authentication for protecting private routes
 - Create middlewares for checking the user identity as well as the privilege.
 - Redirect unauthenticated user to access the protected routes.
-- Logout function for destroying the session.
+- Logout function by destroying the session.
 
 Logout Icon
 - Hover and active effect to make it more interactive.
@@ -32,7 +54,7 @@ Logout Icon
 ---
 
 ### 2022.10.03
-[JS]
+[Express.js]
 
 Login Function
 - Establish database connection to mongodb.
