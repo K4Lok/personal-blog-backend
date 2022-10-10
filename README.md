@@ -1,4 +1,4 @@
-# Personal Blog Backend w/ Express.js
+# Personal Blog Backend w/ Express.js + MongoDB
 
 [![en](https://img.shields.io/badge/lang-en-brightgreen)](/README.md)
 [![zh](https://img.shields.io/badge/lang-zh-blue)](/README.zh.md)
@@ -21,7 +21,7 @@ Here's the repo for the backend of my personal blog, mainly to practice `node.js
 
 ## Design
 
-Here's the [figma link](https://www.figma.com/file/HLHnjd30QOWMBZnXqELzzX/Backend-NodeJS?node-id=0%3A1) for this design.
+Here's the [figma link](https://www.figma.com/file/HLHnjd30QOWMBZnXqELzzX/Backend-NodeJS?node-id=0%3A1) for the backend.
 
 <img alt="design" src="https://user-images.githubusercontent.com/82365010/189623820-369c7630-bfb3-41aa-a3e3-4118b0191c4d.png">
 
@@ -29,6 +29,6 @@ Here's the [figma link](https://www.figma.com/file/HLHnjd30QOWMBZnXqELzzX/Backen
 
 ## Development Log
 
-I keep track on what I've done everytime I make progress [here](./devlog.md) from scratch. There're gifs or images inside the showcase toggle sections for more intuitive on what the changes looks like.
+I keep track on what I've done everytime making progress [here](./devlog.md) from scratch. There're gifs or images inside the showcase toggle sections for more intuitive on what the changes look like.
 
 ---
