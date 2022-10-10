@@ -1,0 +1,24 @@
+<%- include('components/head', {pageTitle: 'New Blog'}) %>
+<link rel="stylesheet" href="/static/styles/navigation.css">
+<link rel="stylesheet" href="/static/styles/blog.css">
+<link rel="stylesheet" href="/static/styles/blog-details.css">
+<script src="https://cdn.ckeditor.com/ckeditor5/35.1.0/classic/ckeditor.js"></script>
+</head>
+    <body>
+        <div class="container">
+            <%- include('components/nav-bar') %>
+            <div class="blog-wrapper">
+                <div class="blog">
+                    <h2 class="title"><%= blog.title %></h2>
+                    <p class="date"><%= new Date(blog.createdDate).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" }) %></p>
+                    <p class="description" name="description"><%= blog.description %></p>
+                    <!-- <p class="markdown" id="markdown" name="content"><%= blog.content %></p> -->
+                    <div class="blog-content">
+                        <%- blog.content %>
+                    </div>
+                </div>
+            </div>
+            <%- include('components/footer-animated-sea.ejs') %>
+        </div>
+    </body>
+</html>

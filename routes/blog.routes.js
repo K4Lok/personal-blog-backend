@@ -8,6 +8,8 @@ router.get('/new-blog', blogController.getNewBlog);
 
 router.post('/new-blog', blogController.createNewBlog);
 
+router.get('/blog/:id', blogController.getBlog);
+
 router.post('/upload-image', imageUploadMiddleware, blogController.uploadImage);
 
 module.exports = router;

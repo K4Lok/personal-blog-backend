@@ -36,9 +36,22 @@ function uploadImage(req, res) {
     });
 }
 
+async function getBlog(req, res) {
+    const blogId = req.params.id;
+    const blog = await Blog.getBlogById(blogId);
+
+    if(!blog) {
+        res.redirect('/home');
+        return;
+    }
+
+    res.render('blog-details', {blog: blog});
+}
+
 module.exports = {
     getHome: getHome,
     getNewBlog: getNewBlog,
     createNewBlog: createNewBlog,
-    uploadImage: uploadImage
+    uploadImage: uploadImage,
+    getBlog: getBlog
 };

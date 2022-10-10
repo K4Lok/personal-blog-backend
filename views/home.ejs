@@ -8,9 +8,7 @@
         <div class="blog-lists">
             <% for(const blog of blogs) { %>
                 <div class="blog-card">
-                    <h2 class="blog-title">
-                        <%= blog.title %>
-                    </h2>
+                    <h2 class="blog-title"><a class="blog-title-link" href="/blog/<%= blog._id %>"><%= blog.title %></a></h2>
                     <p class="blog-date"><%= new Date(blog.createdDate).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" }) %></p>
                     <p class="blog-preview-text"><%= blog.description %></p>
                 </div>

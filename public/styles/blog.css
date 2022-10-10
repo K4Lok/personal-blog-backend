@@ -34,6 +34,17 @@
     font-weight: 600;
 }
 
+.blog-card .blog-title-link {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.1s linear;
+}
+
+.blog-card .blog-title-link:hover {
+    /* color: rgba(0, 0, 0, 0.6); */
+    color: #F7B0B0;
+}
+
 .blog-card .blog-date {
     margin: 0;
     font-size: 1.15rem;
