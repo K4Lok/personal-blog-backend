@@ -1,3 +1,21 @@
+### 2022.10.10
+[HTML, CSS, Express.js]
+
+Create Blog Details Page
+- Attach the blog id to every blog card when rendering the home page.
+- Fetch the blog details when click in the blog title with route paraameters.
+- Display the fetched data in the view, like title, date, and markdown content.
+- Style the HTML contents(from markdown to HTML elements) for more customized style.
+
+<details>
+  <summary>showcase</summary>
+  <img width="400" src="https://user-images.githubusercontent.com/82365010/194804837-269bb2aa-e3e5-4565-96ab-57f67445a5f1.png">
+  <img width="400" src="https://user-images.githubusercontent.com/82365010/194804901-5da7e13e-fde6-4826-962a-c4858e43e537.png">
+
+</details>
+
+---
+
 ### 2022.10.09
 [Express.js]
 
